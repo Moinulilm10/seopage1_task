@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ChildCard from "./ChildCard";
 
 function ParentCard({ data, setModal, modal, list }) {

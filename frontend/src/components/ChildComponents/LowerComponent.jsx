@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function LowerComponent({ setModal, modal, list }) {
   return (
     <div className="flex justify-between items-center font-semibold text-sm text-gray-700">

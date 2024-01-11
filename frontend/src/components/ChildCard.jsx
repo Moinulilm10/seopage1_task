@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import LowerComponent from "./Child Components/LowerComponent";
 import MiddleComponent from "./Child Components/MiddleComponent";
 import UpperComponent from "./Child Components/UpperComponent";

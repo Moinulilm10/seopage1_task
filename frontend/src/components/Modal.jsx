@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 
@@ -16,8 +17,10 @@ function Modal({ modal, setModal, list, setList }) {
     });
 
     try {
+      const url = "http://localhost:3001/";
       const result = await axios.post(
-        "https://seopage1-task.onrender.com/api/user/upload",
+        // "https://seopage1-task.onrender.com/api/user/upload",
+        url,
         formData
       );
       setFiles([]);
@@ -51,7 +54,7 @@ function Modal({ modal, setModal, list, setList }) {
     };
 
     fetchFileNames();
-  }, [changes]);
+  }, [changes, setList]);
 
   return (
     <form
