@@ -38,11 +38,11 @@ function Modal({ modal, setModal, list, setList }) {
   useEffect(() => {
     const fetchFileNames = async () => {
       try {
-        console.log("object");
+        // console.log("object");
         const result = await axios.get(
           "http://localhost:3001/api/user/fileName"
         );
-        console.log("out");
+        // console.log("out");
         const files = result.data.payload.fileNames;
         setList(files);
       } catch (err) {
