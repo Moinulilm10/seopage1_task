@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import LowerComponent from "./Child Components/LowerComponent";
-import MiddleComponent from "./Child Components/MiddleComponent";
-import UpperComponent from "./Child Components/UpperComponent";
+import LowerComponent from "./ChildComponents/LowerComponent";
+import MiddleComponent from "./ChildComponents/MiddleComponent";
+import UpperComponent from "./ChildComponents/UpperComponent";
 
 function ChildCard({ setModal, modal, list }) {
   return (
