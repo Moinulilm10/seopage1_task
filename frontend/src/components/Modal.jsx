@@ -18,6 +18,7 @@ function Modal({ modal, setModal, list, setList }) {
 
     try {
       const url = "http://localhost:3001/api/user/upload";
+      // eslint-disable-next-line no-unused-vars
       const result = await axios.post(url, formData);
       setFiles([]);
       inputFileRef.current.value = ""; // Reset input value
@@ -80,7 +81,7 @@ function Modal({ modal, setModal, list, setList }) {
             type="submit"
             className={`text-center bg-white rounded px-3 py-1.5 text-black font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300`}
           >
-            Add
+            Upload
           </button>
         </div>
         <h1 className="text-center font-semibold text-black text-xl mb-2">

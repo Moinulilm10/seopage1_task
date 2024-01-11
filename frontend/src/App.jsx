@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Modal from "./Components/Modal";
-import ParentCard from "./Components/ParentCard";
 import Card from "./UI/Card";
+import Modal from "./components/Modal";
+import ParentCard from "./components/ParentCard";
 
 function App() {
   const [modal, setModal] = useState(false);
