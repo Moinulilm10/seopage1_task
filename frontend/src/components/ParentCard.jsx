@@ -4,7 +4,7 @@ import ChildCard from "./ChildCard";
 function ParentCard({ data, setModal, modal, list }) {
   return (
     <div className="bg-gray-200 px-2 py-4 flex flex-col">
-      <div className="flex justify-between items-center font-semibold text-gray-600 mb-6 text-lg">
+      <div className="flex justify-between items-center font-semibold text-gray-200 mb-6 text-lg">
         <div className="flex justify-center items-center gap-1.5">
           {data.color !== "none" && (
             <div

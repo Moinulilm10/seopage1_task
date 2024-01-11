@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "./Components/Modal";
 import ParentCard from "./Components/ParentCard";
+import Card from "./UI/Card";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -34,18 +35,25 @@ function App() {
   ];
 
   return (
-    <div className="h-screen overflow-x-auto flex gap-4 p-5 max-maxWidth m-auto  whitespace-nowrap relative">
-      {data.map((item, index) => (
-        <ParentCard
-          key={index}
-          data={item}
-          setModal={setModal}
+    <Card>
+      <div className="h-screen overflow-x-auto flex gap-4 p-5 max-maxWidth m-auto  whitespace-nowrap relative">
+        {data.map((item, index) => (
+          <ParentCard
+            key={index}
+            data={item}
+            setModal={setModal}
+            modal={modal}
+            list={list}
+          />
+        ))}
+        <Modal
           modal={modal}
+          setModal={setModal}
           list={list}
+          setList={setList}
         />
-      ))}
-      <Modal modal={modal} setModal={setModal} list={list} setList={setList} />
-    </div>
+      </div>
+    </Card>
   );
 }
 export default App;

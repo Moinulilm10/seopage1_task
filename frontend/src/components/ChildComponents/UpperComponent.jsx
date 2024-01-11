@@ -7,7 +7,7 @@ function UpperComponent() {
           src="/images/users/user1.png"
           alt="user 1"
         />
-        <h1 className="text-sm text-gray-600">Client Name</h1>
+        <h1 className="text-sm text-black">Client Name</h1>
       </div>
       <div className="flex justify-center items-center gap-2">
         <img
@@ -15,7 +15,7 @@ function UpperComponent() {
           src="/images/users/user2.png"
           alt="user 2"
         />
-        <h1 className="text-sm text-gray-600">Sadik Istiak</h1>
+        <h1 className="text-sm text-black">Sadik Istiak</h1>
       </div>
     </div>
   );
