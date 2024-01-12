@@ -39,9 +39,8 @@ function Modal({ modal, setModal, list, setList }) {
     const fetchFileNames = async () => {
       try {
         // console.log("object");
-        const result = await axios.get(
-          "https://sepage1.onrender.com/api/user/fileName"
-        );
+        const url = "https://sepage1.onrender.com/api/user/fileName";
+        const result = await axios.get(url);
         // console.log("out");
         const files = result.data.payload.fileNames;
         setList(files);
