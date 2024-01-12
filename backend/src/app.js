@@ -27,7 +27,7 @@ const upload = multer({ storage }).any();
 
 // middleware
 const corsOptions = {
-  origin: "http://localhost:5173", // frontend URI (ReactJS)
+  origin: [""], // frontend URI (ReactJS)
   methods: ["POST", "GET"],
   credentials: true,
 };
