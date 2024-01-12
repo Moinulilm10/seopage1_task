@@ -4,12 +4,12 @@ function LowerComponent({ setModal, modal, list }) {
     <div className="flex justify-between items-center font-semibold text-sm text-gray-700">
       <img
         className="w-6 rounded-full"
-        src="/images/users/user3.png"
+        src="/images/users/user3.jpg"
         alt="User 3"
       />
       <img
         className="w-6 rounded-full"
-        src="/images/users/user4.png"
+        src="/images/users/user4.jpg"
         alt="User 4"
       />
       <h1 className="rounded-full p-1 bg-gray-200">12+</h1>
