@@ -27,7 +27,7 @@ const upload = multer({ storage }).any();
 
 // middleware
 const corsOptions = {
-  origin: [""], // frontend URI (ReactJS)
+  origin: "https://seopage1-frontend-mhwa.onrender.com", // frontend URI (ReactJS)
   methods: ["POST", "GET"],
   credentials: true,
 };
