@@ -17,7 +17,7 @@ function Modal({ modal, setModal, list, setList }) {
     });
 
     try {
-      const url = "http://localhost:3001/api/user/upload";
+      const url = "https://sepage1.onrender.com/api/user/upload";
       // eslint-disable-next-line no-unused-vars
       const result = await axios.post(url, formData);
       setFiles([]);
@@ -40,7 +40,7 @@ function Modal({ modal, setModal, list, setList }) {
       try {
         // console.log("object");
         const result = await axios.get(
-          "http://localhost:3001/api/user/fileName"
+          "https://sepage1.onrender.com/api/user/fileName"
         );
         // console.log("out");
         const files = result.data.payload.fileNames;
