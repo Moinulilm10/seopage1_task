@@ -25,7 +25,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage }).any();
 
-app.use(cors());
+// middleware
+const corsOptions = {
+  origin: "http://localhost:5173", // frontend URI (ReactJS)
+  methods: ["POST", "GET"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 // app.use(rateLimiter);
 app.use(morgan("dev"));
 app.use(bodyParser.json());

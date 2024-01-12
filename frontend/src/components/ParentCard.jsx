@@ -18,7 +18,7 @@ function ParentCard({ data, setModal, modal, list }) {
             ></div>
           )}
 
-          <h className="text-black font-semibold">{data.title}</h>
+          <h4 className="text-black font-semibold">{data.title}</h4>
         </div>
         <h1 className="px-2.5 py-0.5 rounded bg-gray-300 m-0 inl">0</h1>
       </div>
